@@ -10,7 +10,7 @@
 </head>
 <body class="bg-black text-white">
     <div class="flex container mx-auto">
-        <div class="first md:w-[30%] ">
+        <div class="first md:w-[30%]">
             <div class="sidebar flex flex-col sticky top-0">
                 <ul class="flex flex-col text-md space-y-1 md:px-11 px-2">
                     <div class="logo invert my-2">
@@ -28,7 +28,7 @@
                     <li class="flex justify-start font-bold items-center gap-3 w-10 md:w-full md:px-3 py-1 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full hover:font-bold bg-blue-500 rounded-full p-2 md:hidden  transition-all duration-800"><span class="material-symbols-outlined text-2xl">edit</span></li> 
                     <li><div class="button w-full text-center hidden md:block"><button class="bg-blue-500 font-bold mt-1 text-white py-2 px-12 text-lg rounded-full">Post</button></div></li>
                 </ul>       
-                <div class="user transition-all duration-200 w-[90%] m-3 rounded-full flex justify-between items-center hover:cursor-pointer md:px-3 py-2 hover:bg-gray-600">
+                <div class="user transition-all duration-200 w-[90%] m-3 mt-6 rounded-full flex justify-between items-center hover:cursor-pointer md:px-3 py-2 hover:bg-gray-600">
                     <div class="info flex gap-3">
                         <div class="dp">
                             <img src="img.jpg" class="w-10 rounded-full">
@@ -161,12 +161,14 @@
                 </div>
             </div>
         </div>
-        <div class="third w-1/2  space-y-3 px-3 py-2 hidden md:block">
-            <div class="search">
+        <div class="third w-1/2  gap-3 px-3 pb-2 hidden md:flex md:flex-col">
+            <div class="search sticky top-0 bg-black py-2 align-top z-10">
                 <input type="text" class="outline-none w-full rounded-full bg-gray-900 text-white py-1.5 px-5" placeholder="Search">
             </div>
-            <div class="happening bg-gray-900 rounded-xl pt-2 ">
-                <h1 class="text-lg font-bold mx-3 my-2">What's Happening</h1>
+            <div class="content-third sticky top-[-180px] flex flex-col gap-3"> 
+
+                <div class="happening bg-gray-900 rounded-xl pt-2 ">
+                    <h1 class="text-lg font-bold mx-3 my-2">What's Happening</h1>
                 <div class="item flex flex-col transition-all duration-200 hover:bg-gray-600 px-4 py-2 hover:cursor-pointer">
                     <span class="text-sm text-gray-400">Trending in India</span>
                     <span class="font-semibold">#MissileAttack</span>
@@ -244,6 +246,7 @@
                 <span class="mr-2 cursor-pointer">More</span>
                 <span class="mr-2 cursor-pointer">© 2024 X Corp.</span>
             </div>
+        </div>
         </div>
     </div>
 </body>
